@@ -20,7 +20,7 @@ function setTimer() {
         times = getTimeObject(pathString);
     } catch (error) {
         console.error(error);
-        const message = `Couldn't parse time string :(`;
+        const message = 'Couldn\'t parse time string :(';
         const errElem = createElem('p', message, 'error__message');
 
         countdown.innerHTML = '';
@@ -66,7 +66,7 @@ function createElem(tag, innerHTML, className) {
 }
 
 function createTimeElem(num, unit) {
-    const container = createElem('div', null, 'countdown__item');
+    const container = createElem('div', '', 'countdown__item');
     const numChild = createElem('p', num, 'countdown__number');
     const unitChild = createElem('p', unit, 'countdown__unit');
 
