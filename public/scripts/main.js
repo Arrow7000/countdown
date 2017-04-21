@@ -2,12 +2,6 @@ const units = ['days', 'hours', 'minutes', 'seconds'];
 
 const countdown = document.getElementById('countdown');
 
-// const pathString = window.location.pathname;
-// const pathString = window.location.hash.split('#')[1];
-
-countdown.appendChild(createTimeElem(14, 'minutes'));
-
-
 setTimer();
 setInterval(setTimer, 1000);
 
@@ -18,7 +12,8 @@ setInterval(setTimer, 1000);
  */
 
 function setTimer() {
-    const pathString = window.location.hash.split('#')[1];
+    // const pathString = window.location.hash.split('#')[1];
+    const pathString = window.location.pathname.split('/')[1];
 
     let times;
     try {

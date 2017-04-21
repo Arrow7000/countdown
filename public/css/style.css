@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+.page__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fefeff;
+}
+
+.countdown__container {
+    text-align: center;
+    display: flex;
+    font-family: 'Lovelo Black', sans-serif;
+}
+
+.countdown__item {
+    color: #000000;
+}
+
+.countdown__number {
+    margin: 0;
+}
+
+.countdown__unit {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+@font-face {
+    font-family: 'Lovelo Black';
+    src: url("../fonts/LoveloBlack.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Lovelo Line Bold';
+    src: url("../fonts/LoveloLineBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Lovelo Line Light';
+    src: url("../fonts/LoveloLineLight.otf") format("opentype");
+}
+
+.countdown__item {
+    margin: 5px;
+}
+
+.countdown__number {
+    font-size: 2.25rem;
+}
+
+.countdown__unit {
+    font-size: 1rem;
+}
+
+@media (min-width:480px) {
+    .countdown__item {
+        margin: 10px;
+    }
+    .countdown__number {
+        font-size: 3rem;
+    }
+    .countdown__unit {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width:768px) {
+    .countdown__item {
+        margin: 25px;
+    }
+    .countdown__number {
+        font-size: 6rem;
+    }
+    .countdown__unit {
+        font-size: 2rem;
+    }
+}
